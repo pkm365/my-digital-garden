@@ -1,20 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
-  "private": true,
-  "version": "4.5.1",
-  "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
-  },
-  "scripts": {
-    "quartz": "./quartz/bootstrap-cli.mjs",
-=======
   "name": "my-digital-garden",
   "description": "🌱 基于 Quartz 构建的个人数字花园 - 知识管理和思维网络",
   "private": true,
@@ -22,11 +6,14 @@
   "type": "module",
   "author": "pkm365",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackyzha0/quartz.git"
+  },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "build": "npx quartz build",
     "serve": "npx quartz build --serve",
->>>>>>> d6a9d90e1273898889d8a2ffce6b723e23d69e33
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
@@ -43,12 +30,8 @@
     "digital-garden",
     "markdown",
     "blog",
-<<<<<<< HEAD
-    "quartz"
-=======
     "quartz",
     "knowledge-management"
->>>>>>> d6a9d90e1273898889d8a2ffce6b723e23d69e33
   ],
   "bin": {
     "quartz": "./quartz/bootstrap-cli.mjs"
@@ -131,8 +114,4 @@
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d6a9d90e1273898889d8a2ffce6b723e23d69e33
