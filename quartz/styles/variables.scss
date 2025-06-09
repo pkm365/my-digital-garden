@@ -16,12 +16,34 @@ $mobile: "(max-width: #{map.get($breakpoints, mobile)})";
 $tablet: "(min-width: #{map.get($breakpoints, mobile)}) and (max-width: #{map.get($breakpoints, desktop)})";
 $desktop: "(min-width: #{map.get($breakpoints, desktop)})";
 
-$pageWidth: #{map.get($breakpoints, mobile)};
+$pageWidth: 1000px;
 $sidePanelWidth: 320px; //380px;
 $topSpacing: 6rem;
 $boldWeight: 700;
 $semiBoldWeight: 600;
 $normalWeight: 400;
+
+// Fonts
+$fontFamily: "Inter", sans-serif;
+$codeFontFamily: "Source Code Pro", "ui-monospace", "SFMono-Regular", Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+
+// Colors
+$light: #f8f8f8;
+$dark: #1e1e1e;
+$secondary: #565656;
+$tertiary: #a6a6a6;
+$highlight: rgba(187, 237, 110, 0.2);
+
+$lightgray: #e5e5e5;
+$gray: #b3b3b3;
+$darkgray: #303030;
+
+// Page layout
+$left-sidebar-width: 270px;
+$right-sidebar-width: 270px;
+$content-width: 65ch;
+$sidebar-h-padding: 1.5rem;
 
 $mobileGrid: (
   templateRows: "auto auto auto auto auto",
@@ -56,3 +78,27 @@ $desktopGrid: (
       "grid-sidebar-left grid-center grid-sidebar-right"\
       "grid-sidebar-left grid-footer grid-sidebar-right"',
 );
+
+:root {
+  --light: #f8f8f8;
+  --dark: #1e1e1e;
+  --secondary: #565656;
+  --tertiary: #a6a6a6;
+  --highlight: rgba(187, 237, 110, 0.2);
+
+  --lightgray: #e5e5e5;
+  --gray: #b3b3b3;
+  --darkgray: #303030;
+}
+
+[saved-theme="dark"] {
+  --light: #1e1e1e;
+  --dark: #f8f8f8;
+  --secondary: #a6a6a6;
+  --tertiary: #565656;
+  --highlight: rgba(187, 237, 110, 0.2);
+
+  --lightgray: #303030;
+  --gray: #b3b3b3;
+  --darkgray: #e5e5e5;
+}
