@@ -45,13 +45,3 @@ TypeError: (intermediate value).glob is not a function
 1. 增强功能：搜索、标签、RSS
 2. 数据层：考虑集成 [[Cloudflare D1]] 数据库
 3. 知识花园：搭建这个 [[Quartz]] 项目作为个人wiki
-
----
-
-相关链接：
-- [[数字花园]]：下一步要搭建的项目
-<<<<<<< HEAD
-- [[知识管理系统]]：整体的信息架构思考 
-=======
-- [[知识管理系统]]：整体的信息架构思考
->>>>>>> d6a9d90e1273898889d8a2ffce6b723e23d69e33
