@@ -641,3 +641,14 @@ iframe.pdf {
   transition: width 0.2s ease;
   z-index: 9999;
 }
+
+/* Style from base.css */
+.page .sidebar.left {
+    padding-left: 16px;  /* 这个生效了 */
+    padding-right: 16px; /* 这个生效了 */
+}
+
+/* Style from custom.css */
+.left.sidebar {
+    padding: 16px; /* 这里面的 padding-left 和 padding-right 会被划上删除线 */
+}

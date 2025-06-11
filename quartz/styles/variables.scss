@@ -18,7 +18,7 @@ $desktop: "(min-width: #{map.get($breakpoints, desktop)})";
 
 $pageWidth: 1000px;
 $sidePanelWidth: 320px; //380px;
-$topSpacing: 6rem;
+$topSpacing: 1rem;
 $boldWeight: 700;
 $semiBoldWeight: 600;
 $normalWeight: 400;
@@ -43,7 +43,7 @@ $darkgray: #303030;
 $left-sidebar-width: 270px;
 $right-sidebar-width: 270px;
 $content-width: 65ch;
-$sidebar-h-padding: 1.5rem;
+$sidebar-h-padding: 1rem;
 
 $mobileGrid: (
   templateRows: "auto auto auto auto auto",

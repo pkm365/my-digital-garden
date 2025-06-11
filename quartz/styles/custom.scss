@@ -1,6 +1,14 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* 
+  在这里添加您的自定义样式。
+  您可以在 quartz.config.ts 的 theme.colors 中使用已定义的颜色变量。
+*/
+
+/* --- 侧边栏宽度调整 --- */
+.left.sidebar {
+  width: 272px !important; /* !important 用于确保此规则覆盖默认样式 */
+}
 
 /* 
   You can write your own custom CSS here.
@@ -9,4 +17,67 @@
 body {
     background-color: var(--light);
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* --- 左侧边栏卡片化样式 --- */
+
+/* 为左侧边栏设置一个统一的背景、边框和圆角，形成卡片效果 */
+.left.sidebar {
+  background-color: rgba(184, 184, 184, 0.2); /* 使用一个半透明的灰色作为背景 */
+  border-radius: 12px; /* 设置圆角大小 */
+  padding: 16px; /* 按照图片设置内边距为 16px */
+  backdrop-filter: blur(4px); /* 添加背景模糊效果，增加质感 (可选) */
+  -webkit-backdrop-filter: blur(4px); /* 兼容 Safari */
+  margin: 16px; /* 设置外边距为 16px */
+  position: relative; /* 设置相对定位 */
+  top: 16px; /* 向下偏移 16px */
+}
+
+/* 立体边框和阴影效果 - 仅在桌面端显示 */
+@media not (max-width: 800px) {
+  .left.sidebar {
+    border: 2px solid var(--gray);
+    box-shadow: 8px 6px 0 0 var(--gray);
+  }
+
+  [saved-theme="dark"] .left.sidebar {
+    border-color: var(--lightgray);
+    box-shadow: 8px 6px 0 0 var(--lightgray);
+  }
+}
+
+/* 移除浏览器组件的默认标题边框和内边距，以更好地融入卡片 */
+.left.sidebar .explorer .title-button {
+  padding-left: 0;
+  border-bottom: none;
+}
+
+
+/* --- 悬停高亮效果 --- */
+
+/* 为浏览器中的文件链接和文件夹按钮添加过渡效果和基础样式 */
+.left.sidebar .explorer-ul a,
+.left.sidebar .folder-button {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* 平滑的过渡动画 */
+  border-radius: 6px; /* 为高亮背景也设置圆角 */
+  padding: 0.25rem 0.5rem;
+  margin: 0.1rem 0;
+  display: block;
+}
+
+/* 定义鼠标悬停时的样式 */
+.left.sidebar .explorer-ul a:hover,
+.left.sidebar .folder-button:hover {
+  background-color: var(--tertiary); /* 使用主题中的第三颜色作为高亮背景 */
+  color: var(--light); /* 同时改变文字颜色以保证对比度 */
+}
+
+/* 针对当前打开的文件夹，也应用高亮样式 */
+.left.sidebar .folder-button.active {
+    background-color: var(--tertiary);
+    color: var(--light);
+}
+
+[saved-theme="dark"] .left.sidebar {
+  background-color: rgba(57, 54, 57, 0.4); /* 适配深色模式的半透明背景 */
 }
