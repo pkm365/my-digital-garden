@@ -31,6 +31,7 @@ body {
   margin: 16px; /* 设置外边距为 16px */
   position: relative; /* 设置相对定位 */
   top: 16px; /* 向下偏移 16px */
+  transition: box-shadow 0.3s ease-in-out; /* 为所有阴影效果添加平滑过渡 */
 }
 
 /* 立体边框和阴影效果 - 仅在桌面端显示 */
@@ -40,9 +41,17 @@ body {
     box-shadow: 8px 6px 0 0 var(--gray);
   }
 
+  .left.sidebar:hover {
+    box-shadow: 8px 6px 0 0 var(--gray), 0 0 15px 5px rgba(86, 86, 86, 0.2); /* 悬停时，在原有阴影基础上增加柔和光晕 */
+  }
+
   [saved-theme="dark"] .left.sidebar {
     border-color: var(--lightgray);
     box-shadow: 8px 6px 0 0 var(--lightgray);
+  }
+
+  [saved-theme="dark"] .left.sidebar:hover {
+    box-shadow: 8px 6px 0 0 var(--lightgray), 0 0 15px 5px rgba(229, 229, 229, 0.15); /* 深色模式下的悬停光晕 */
   }
 }
 
@@ -81,3 +90,23 @@ body {
 [saved-theme="dark"] .left.sidebar {
   background-color: rgba(57, 54, 57, 0.4); /* 适配深色模式的半透明背景 */
 }
+
+/* --- 搜索栏样式 --- */
+.search > .search-button {
+  background-color: var(--lightgray);
+  font-family: inherit;
+  font-size: inherit;
+  height: auto; /* 让高度自动适应内边距 */
+  text-align: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  border-radius: 8px; /* 增大圆角 */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* 增加内部的垂直和水平边距 */
+  display: flex;
+}
+
+/* 深色模式下搜索框会自动使用正确的深灰色背景，因为 --lightgray 在深色模式下就是深灰色 */
