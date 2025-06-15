@@ -19,6 +19,25 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* === 黑悟空全屏背景（仅暗色主题） === */
+[saved-theme="dark"] body {
+  background-color: #000; /* 背景兜底色 */
+  background-image: url("/static/black-wukong-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+[saved-theme="dark"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* --- 左侧边栏卡片化样式 --- */
 
 /* 为左侧边栏设置一个统一的背景、边框和圆角，形成卡片效果 */
@@ -270,4 +289,45 @@ body {
     max-width: 250px;
     justify-content: center;
   }
+}
+
+/* === Sidebar Search – 仅放大镜，悬停展开 === */
+.left.sidebar .search {
+  /* ① 默认状态：只剩放大镜那么宽 */
+  width: 2.6rem;                /* 约 40px */
+  overflow: hidden;             /* 把文字裁掉 */
+  transition: width 0.25s ease; /* 展开动画 */
+}
+
+/* ② 悬停或键盘聚焦输入框时，恢复整行宽度 */
+.left.sidebar .search:hover,
+.left.sidebar .search:focus-within {
+  width: 100%;
+}
+
+/* ③ 调低整体高度，提高透明度 */
+.left.sidebar .search > .search-button {
+  height: 1.8rem;               /* 比默认矮一些 */
+  padding: 0.25rem;             /* 仅包住图标 */
+  transition: padding 0.25s ease;
+}
+
+/* 展开时恢复正常内边距 */
+.left.sidebar .search:hover   > .search-button,
+.left.sidebar .search:focus-within > .search-button {
+  padding: 0.5rem 0.75rem;
+}
+
+/* ④ 默认隐藏文字，展开时渐现 */
+.left.sidebar .search > .search-button > p {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-width 0.25s ease, opacity 0.25s ease;
+}
+
+.left.sidebar .search:hover   > .search-button > p,
+.left.sidebar .search:focus-within > .search-button > p {
+  max-width: 120px;   /* 够容纳"搜索"二字即可，可按需调整 */
+  opacity: 1;
 }

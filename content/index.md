@@ -6,7 +6,7 @@ enableToc: true
 <div class="hero-banner">
   <div class="hero-content">
     <div class="hero-icon">🌱</div>
-    <h1 class="hero-title">Jarry's Digital Garden</h1>
+    <h1 class="hero-title">Kejia's Digital Garden</h1>
     <p class="hero-subtitle">一个不断成长的思想空间 · A Growing Space of Ideas</p>
     <p class="hero-description">在这里，知识如种子般发芽，思想如藤蔓般交织，每一个想法都在寻找与其他概念的连接。欢迎来到我的数字花园，一起探索知识的无限可能。</p>
     <div class="hero-actions">
