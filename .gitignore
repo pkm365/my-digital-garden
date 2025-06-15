@@ -1,11 +1,33 @@
-.DS_Store
-.gitignore
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 node_modules
+.pnp
+.pnp.js
+
+# quartz build stuff
 public
+.quartz-cache/
+quartz.d.ts
+
+# misc
+.DS_Store
+*.pem
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.idea
+
+# vercel
+.vercel
+
+.gitignore
 prof
 tsconfig.tsbuildinfo
 .obsidian
-.quartz-cache
-private/
 .replit
 replit.nix
+.github
