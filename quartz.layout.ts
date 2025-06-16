@@ -6,7 +6,6 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Backlinks({ hideWhenEmpty: true }),
     Component.Comments({
       provider: 'giscus',
       options: {
@@ -19,7 +18,10 @@ export const sharedPageComponents: SharedLayout = {
         // from data-category-id
         categoryId: 'DIC_kwDOO4KXWc4Crkg1',
         // from data-lang
-        lang: 'zh-CN'
+        lang: 'zh-CN',
+        themeUrl: "https://www.pkm365.com/static/giscus", // corresponds to quartz/static/giscus/
+        lightTheme: "light", // corresponds to light-theme.css in quartz/static/giscus/
+        darkTheme: "dark", // corresponds to dark-theme.css quartz/static/giscus/
       }
     }),
   ],
@@ -51,8 +53,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.DesktopOnly(Component.TableOfContents()),
     Component.Graph(),
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks({ hideWhenEmpty: true }),
   ],
 }
 
