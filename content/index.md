@@ -1,7 +1,7 @@
 ---
-title: "欢迎来到我的数字花园"
-enableToc: true
+{"publish":true,"title":"欢迎来到我的数字花园","enableToc":true,"cssclasses":""}
 ---
+
 
 <div class="hero-banner">
   <div class="hero-content">

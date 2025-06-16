@@ -1,8 +1,7 @@
 ---
-title: "Cloudflare Workers 博客搭建"
-date: "2025-06-08"
-tags: ["Cloudflare", "博客", "部署"]
+{"publish":true,"title":"Cloudflare Workers 博客搭建","tags":["Cloudflare","博客","部署"],"cssclasses":""}
 ---
+
 
 今天成功搭建了基于 [[Cloudflare Workers]] 的博客系统。
 
