@@ -1,14 +1,7 @@
 ---
-title: "Frontmatter 与目录展示"
-description: "这是一个用于演示 Frontmatter 字段和目录生成功能的页面。"
-tags:
-  - showcase
-  - frontmatter
-  - toc
-aliases: [元数据, 页面配置]
-draft: false
-enableToc: true
+{"publish":true,"aliases":"元数据 页面配置","title":"Frontmatter 与目录展示","description":"这是一个用于演示 Frontmatter 字段和目录生成功能的页面。","enableToc":true,"tags":["showcase","frontmatter","toc"],"cssclasses":""}
 ---
+
 
 这个页面旨在展示 `frontmatter`（文件头部的元数据）的强大功能以及它如何与页面的其他部分（如目录）互动。
 
@@ -33,7 +26,7 @@ enableToc: true
 
 - `title`: 设置页面的主标题。
 - `description`: 页面的简短描述，常用于搜索引擎优化（SEO）和链接预览。
-- `tags`: 为页面添加标签，便于分类和在 [[docs/features/folder and tag listings|标签列表页]] 中查找。
+- `tags`: 为页面添加标签，便于分类和在 [[docs/features/folder and tag listings\|标签列表页]] 中查找。
 - `aliases`: 页面的别名。您可以使用 `[[元数据]]` 来链接到这个页面。
 - `draft`: 如果设为 `true`，此页面将不会被发布。
 - `enableToc`: 如果设为 `true`，页面的右侧（默认布局）会显示目录。
@@ -80,4 +73,4 @@ enableToc: true
 ...
 
 ---
-返回 [[showcase/showcase-index|功能展示首页]] 
+返回 [[showcase/showcase-index\|功能展示首页]] 

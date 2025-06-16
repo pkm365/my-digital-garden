@@ -1,8 +1,7 @@
 ---
-title: "LaTeX 数学公式展示"
-tags:
-  - showcase
+{"publish":true,"title":"LaTeX 数学公式展示","tags":["showcase"],"cssclasses":""}
 ---
+
 
 Quartz 默认使用 KaTeX 在构建时排版数学公式，支持行内公式和块级公式。
 
@@ -46,4 +45,4 @@ $$
 - **正确**: `我有 \$1 你有 \$2` 会渲染为：我有 \$1 你有 \$2
 
 ---
-返回 [[showcase/showcase-index|功能展示首页]] 
+返回 [[showcase/showcase-index\|功能展示首页]] 

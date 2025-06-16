@@ -1,8 +1,7 @@
 ---
-title: "语法高亮展示"
-tags:
-  - showcase
+{"publish":true,"title":"语法高亮展示","tags":["showcase"],"cssclasses":""}
 ---
+
 
 Quartz 支持在构建时进行服务端语法高亮，这意味着它对访问者非常友好，加载速度快，且无需客户端 JavaScript。
 
@@ -90,4 +89,4 @@ export function trimPathSuffix(fp: string): string {
 }
 ````
 ---
-返回 [[showcase/showcase-index|功能展示首页]] 
+返回 [[showcase/showcase-index\|功能展示首页]] 

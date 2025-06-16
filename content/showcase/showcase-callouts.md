@@ -1,8 +1,7 @@
 ---
-title: "卡片 (Callouts) 展示"
-tags:
-  - showcase
+{"publish":true,"title":"卡片 (Callouts) 展示","tags":["showcase"],"cssclasses":""}
 ---
+
 
 本文档展示了 Quartz 支持的各种 Callout（标注卡片）样式。这些样式与 Obsidian 兼容。
 
@@ -63,7 +62,7 @@ tags:
 
 ## 自定义卡片
 
-你也可以创建自定义类型的卡片，具体方法请参考 [[docs/features/callouts|Callouts]] 文档。
+你也可以创建自定义类型的卡片，具体方法请参考 [[docs/features/callouts\|Callouts]] 文档。
 
 ---
-返回 [[showcase/showcase-index|功能展示首页]] 
+返回 [[showcase/showcase-index\|功能展示首页]] 

@@ -1,13 +1,12 @@
 ---
-title: "引文 (Citations) 展示"
-tags:
-  - showcase
+{"publish":true,"title":"引文 (Citations) 展示","tags":["showcase"],"cssclasses":""}
 ---
+
 
 Quartz 支持通过 BibTeX 文件来管理和插入学术引文。
 
 > [!warning] 提示
-> 此功能由 [[docs/plugins/Citations|Citations]] 插件提供，**默认可能未开启**。如果此页面中的引文没有正确渲染，请确保您已在 `quartz.config.ts` 中启用了该插件。
+> 此功能由 [[docs/plugins/Citations\|Citations]] 插件提供，**默认可能未开启**。如果此页面中的引文没有正确渲染，请确保您已在 `quartz.config.ts` 中启用了该插件。
 
 ## 引文用法
 
@@ -28,4 +27,4 @@ Quartz 支持通过 BibTeX 文件来管理和插入学术引文。
 [^ref]
 
 ---
-返回 [[showcase/showcase-index|功能展示首页]] 
+返回 [[showcase/showcase-index\|功能展示首页]] 
