@@ -5,7 +5,9 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Backlinks({ hideWhenEmpty: false }),
+  ],
   footer: Component.Footer({
     links: {
       "X (Twitter)": "https://x.com/jarryfeng1",
@@ -25,7 +27,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.Backlinks({ hideWhenEmpty: false }),
   ],
   left: [
     Component.PageTitle(),
