@@ -25,6 +25,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.Backlinks({ hideWhenEmpty: false }),
   ],
   left: [
     Component.PageTitle(),
@@ -35,7 +36,6 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
     Component.Graph(),
   ],
 }
