@@ -6,7 +6,22 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Backlinks({ hideWhenEmpty: false }),
+    Component.Backlinks({ hideWhenEmpty: true }),
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        // from data-repo
+        repo: 'pkm365/my-digital-garden',
+        // from data-repo-id
+        repoId: 'R_kgDOO4KXWQ',
+        // from data-category
+        category: 'Announcements',
+        // from data-category-id
+        categoryId: 'DIC_kwDOO4KXWc4Crkg1',
+        // from data-lang
+        lang: 'zh-CN'
+      }
+    }),
   ],
   footer: Component.Footer({
     links: {

@@ -87,3 +87,18 @@
 6.  **投资视觉技能**：鉴于传统教育强调写作，投资时间学习插图可以提供更大的价值。考虑探索视觉思维课程以提高你的技能。访问[视觉思维工作坊](https://visual-thinking-workshop/)了解更多信息。
 
 文字和视觉在笔记中都应起到相互强化的作用，互补并增强彼此的影响。图像作为一种强大的信息压缩形式，能够在瞬间传达复杂概念。叙述是必要的，为插图添加口头总结和标题增强了它们的价值并有助于记忆。由于传统教育强调写作，投资时间学习插图可以获得更好的“物有所值”。有意设计应当旨在紧密结合文字和图像，以增强沟通效果。
+<script src="https://giscus.app/client.js"
+        data-repo="pkm365/my-digital-garden"
+        data-repo-id="R_kgDOO4KXWQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOO4KXWc4Crkg1"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
