@@ -357,6 +357,32 @@ body {
   margin-bottom: 1rem;
 }
 
+/* 依序递增字体尺寸，表现成长过程 */
 .hero-icon-sequence .stage {
-  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.hero-icon-sequence .stage:nth-child(1) { font-size: 1.8rem; }
+.hero-icon-sequence .stage:nth-child(2) { font-size: 2.4rem; }
+.hero-icon-sequence .stage:nth-child(3) { font-size: 3rem; }
+.hero-icon-sequence .stage:nth-child(4) { font-size: 3.6rem; }
+.hero-icon-sequence .stage:nth-child(5) { font-size: 4.2rem; }
+
+/* === Logo theme variants === */
+.logo-dark {
+  display: none;
+}
+
+.logo-light {
+  display: block;
+}
+
+:root[saved-theme="dark"] {
+  .logo-light {
+    display: none;
+  }
+
+  .logo-dark {
+    display: block;
+  }
 }

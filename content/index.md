@@ -17,7 +17,7 @@
     <p class="hero-description">在这里，知识如种子般发芽，思想如藤蔓般交织，每一个想法都在寻找与其他概念的连接。欢迎来到我的数字花园，一起探索知识的无限可能。</p>
     <div class="hero-actions">
       <a href="#探索指南" class="hero-button primary">🗺️ 开始探索</a>
-      <a href="#连接方式" class="hero-button secondary">🌐 了解更多</a>
+      <a href="./about.md" class="hero-button secondary">🌐 关于我</a>
     </div>
   </div>
 </div>
