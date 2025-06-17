@@ -1,6 +1,7 @@
 ---
-{"publish":true,"aliases":"元数据 页面配置","title":"Frontmatter 与目录展示","description":"这是一个用于演示 Frontmatter 字段和目录生成功能的页面。","enableToc":true,"tags":["showcase","frontmatter","toc"],"cssclasses":""}
+{"publish":true,"aliases":"元 数 据 页 面 配 置","title":"Frontmatter 与目录展示","description":"这是一个用于演示 Frontmatter 字段和目录生成功能的页面。","enableToc":true,"tags":["showcase","frontmatter","toc"],"cssclasses":""}
 ---
+
 
 
 这个页面旨在展示 `frontmatter`（文件头部的元数据）的强大功能以及它如何与页面的其他部分（如目录）互动。

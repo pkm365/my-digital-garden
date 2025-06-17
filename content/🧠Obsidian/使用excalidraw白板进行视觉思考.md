@@ -2,6 +2,7 @@
 {"publish":true,"tags":["excalidraw","obsidian"],"cssclasses":""}
 ---
 
+
 ## Mastering Visual Literacy - Excalidraw
 
 莱斯特的文章非常有趣且与视觉思维和沟通的主题相关，但它并不容易阅读。在探索视觉沟通的句法理论时，我试图将这些复杂的概念提炼成更易消化的形式。这一理论由莱斯特阐述，深入探讨了我们如何解读视觉信息以及支配其句法的规则。
