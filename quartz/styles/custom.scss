@@ -172,6 +172,8 @@ body {
   margin-bottom: 1rem;
   display: block;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  animation: seed-grow 4s ease-out forwards; /* ⬅️ 新增：生长动画 */
+  transform-origin: left center; /* ⬅️ 新增：以左侧为参考点进行缩放 */
 }
 
 .hero-title {
@@ -330,4 +332,31 @@ body {
 .left.sidebar .search:focus-within > .search-button > p {
   max-width: 120px;   /* 够容纳"搜索"二字即可，可按需调整 */
   opacity: 1;
+}
+
+@keyframes seed-grow {
+  0% {
+    transform: translateX(0) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(40px) scale(1);
+    opacity: 1;
+  }
+}
+
+/* === Hero Icon Sequence === */
+.hero-icon-sequence {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* 让基线对齐产生阶梯效果 */
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.hero-icon-sequence .stage {
+  font-size: 2.8rem;
 }
