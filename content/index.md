@@ -31,7 +31,7 @@
 
 >[!info]+  分享
 >  一花一世界，一叶一如来  
-> ![image.png](https://wifi-1308568485.cos.ap-nanjing.myqcloud.com/picture/20241003175200.png)
+> ![一花异世界，一叶一如来.png](https://wifi-1308568485.cos.ap-nanjing.myqcloud.com/picture/%E4%B8%80%E8%8A%B1%E5%BC%82%E4%B8%96%E7%95%8C%EF%BC%8C%E4%B8%80%E5%8F%B6%E4%B8%80%E5%A6%82%E6%9D%A5.png)
 
 ## 🌱 什么是数字花园？
 
