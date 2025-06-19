@@ -1,0 +1,39 @@
+---
+{"publish":true,"title":"how Attention scores calculated","cssclasses":""}
+---
+
+
+Attention scores are computed as:
+
+Attention(Q,K,V)=softmax(dk​​QKT​)V
+
+The scaled dot product measures token relevance, and softmax normalizes scores to focus on key tokens, enhancing context-aware generation in tasks like summarization.
+
+注意力分数的计算公式如下：
+
+Attention(Q,K,V)=softmax(dk​​QKT​)V
+
+缩放点积（scaled dot product）衡量了词元的相关性，而 [[🪄AI漫谈/Softmax 函数在注意力机制中是如何应用的？\|Softmax 函数]]将分数归一化，以聚焦于关键的词元，从而在摘要等任务中增强[[🪄AI漫谈/LLM 中的上下文窗口（Context Window）是什么，为什么它很重要？\|上下文]]感知的生成能力。
+
+这段话是从一个**完整的、自上而下**的视角来描述。
+
+- **“缩放点积（scaled dot product）衡量了词元的相关性”**:
+    
+    - **[[🪄AI漫谈/点积（Dot Product）在自注意力机制中是如何起作用的？\|点积（Dot Product, QKT）]]**: 这就是你（Q）拿着你的关键词“人工智能”，去和每一本书的标签（K）进行“匹配”的过程。点积计算的结果是一个分数，这个分数越高，说明你的查询意图:
+    - **“词元相关性” (Token Relevance)**: 这正是点积计算出的那个“匹配分数”的**直观含义**。分数越高，就代表你这个“查询词元”和那本书代表的“内容词元”**相关性越强**。
+    - **缩放（Scaling, /sqrtd_k​）**: 这是一个技术细节。想象一下，如果你的查询意图（Q）和书的标签（K）都非常“复杂”（向量维度 d_k 很高），那么计算出的分数可能会变得非常大，导致后续处理（Softmax）出问题。所以我们用一个“缩放因子”把它稍微拉回来一点，让数值更稳定。就像给一个过于兴奋的人降降温，让他能更理性地思考。
+- **“Softmax 函数将分数归一化，以聚焦于关键的词元”**:
+    
+    - **Softmax**: 计算出所有书的相关性分数后，你可能得到 `[10, 85, 5, 30]` 这样的分数。Softmax函数会把这些分数转换成一个**百分比概率分布**，比如 `[0.1%, 90%, 0.05%, 9.85%]`。
+    - **“聚焦于关键的词元”**: 看到这个概率分布，你就一目了然了：那本得分85的书（现在占比90%）是最关键的！你应该把绝大部分“注意力”放在它身上。其他的书可以先放一放。这就是“聚焦”。
+
+**小结：** 第一段话从公式的整体出发，告诉你“缩放点积”是用来算**“词元相关性”**的，而Softmax是用来把这个相关性分数变成一个“注意力分布”，让你好**“聚焦”**。
+
+**演示例子**
+
+<iframe
+    height = 700
+    width = 100%
+    padding = 0 0
+    margins = 0 0
+    src="https://g.co/gemini/share/154260cb7881"></iframe>
