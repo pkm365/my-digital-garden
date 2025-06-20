@@ -3,12 +3,6 @@
 ---
 
 
-Attention scores are computed as:
-
-Attention(Q,K,V)=softmax(dk​​QKT​)V
-
-The scaled dot product measures token relevance, and softmax normalizes scores to focus on key tokens, enhancing context-aware generation in tasks like summarization.
-
 注意力分数的计算公式如下：
 
 Attention(Q,K,V)=softmax(dk​​QKT​)V
@@ -27,13 +21,13 @@ Attention(Q,K,V)=softmax(dk​​QKT​)V
     - **Softmax**: 计算出所有书的相关性分数后，你可能得到 `[10, 85, 5, 30]` 这样的分数。Softmax函数会把这些分数转换成一个**百分比概率分布**，比如 `[0.1%, 90%, 0.05%, 9.85%]`。
     - **“聚焦于关键的词元”**: 看到这个概率分布，你就一目了然了：那本得分85的书（现在占比90%）是最关键的！你应该把绝大部分“注意力”放在它身上。其他的书可以先放一放。这就是“聚焦”。
 
-**小结：** 第一段话从公式的整体出发，告诉你“缩放点积”是用来算**“词元相关性”**的，而Softmax是用来把这个相关性分数变成一个“注意力分布”，让你好**“聚焦”**。
+**小结：** 第一段话从公式的整体出发，告诉你“缩放点积”是用来算 **“词元相关性”** 的，而Softmax是用来把这个相关性分数变成一个“注意力分布”，让你好 **“聚焦”**。
 
 **演示例子**
 
 <iframe
-    height = 700
+    height = 1100
     width = 100%
     padding = 0 0
     margins = 0 0
-    src="https://g.co/gemini/share/154260cb7881"></iframe>
+    src="https://pkm365.github.io/pages/attention%20score.html"></iframe>
