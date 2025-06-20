@@ -1,7 +1,6 @@
 ---
-{"publish":true,"title":"How dot product work in attention mechanics","cssclasses":""}
+{"publish":true,"title":"How dot product work in attention mechanics","tags":["ZK/PN"],"cssclasses":""}
 ---
-
 
 ## 点积（Dot Product）在自注意力机制中是如何起作用的？
 
@@ -21,18 +20,19 @@
     
 4. **解释得分**：
     
-    - 从几何上看，这个得分的意义在于衡量两个向量的方向一致性。一个高的正分意味着 Q 和 K 向量在多维空间中指向相似的方向。相关细节请见 `[[点积的几何意义]]`。
+    - 从几何上看，这个得分的意义在于衡量两个向量的方向一致性。一个高的正分意味着 Q 和 K 向量在多维空间中指向相似的方向。
     - 这个原始得分并不是最终的权重，它只是一个中间结果。
-5. **后续步骤**：所有计算出的原始得分会汇集在一起，经过 `[[注意力得分的缩放因子 (sqrt(dk))]]` 处理，然后被送入 `[[Softmax 函数]]` 进行归一化，最终才得到真正的注意力权重。
+5. **后续步骤**：所有计算出的原始得分会汇集在一起，经过 注意力得分的缩放因子 (sqrt(dk))处理，然后被送入 Softmax 函数进行归一化，最终才得到真正的注意力权重。
 
 **小结**：简而言之，点积在自注意力机制中的作用就是：**作为一个高效的计算工具，通过衡量 Q 和 K 向量的对齐程度，为后续生成最终注意力权重提供原始的、未经处理的相似度分数。**
 
 <iframe
     height = 1100
-    width = 100%
+    width = 80%
     padding = 0 0
     margins = 0 0
     src="https://pkm365.github.io/pages/dotproduct.html"></iframe>
+
 ## 360
 
 [[🪄AI漫谈/点积计算的相关性分值是怎么来的？]]
