@@ -64,7 +64,6 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode(), shrink: false },
       ],
     }),
-    Component.RecentNotes(),
     Component.Explorer(),
   ],
   right: [
