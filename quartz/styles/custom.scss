@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 /* 
   在这里添加您的自定义样式。
@@ -384,5 +385,35 @@ body {
 
   .logo-dark {
     display: block;
+  }
+}
+
+/* ========================== */
+/* 移动端导航条与搜索图标优化 */
+/* ========================== */
+
+/* 1. 将左侧导航条在移动端限制为 80% 宽度并水平居中 */
+@media all and ($mobile) {
+  .left.sidebar {
+    width: 80% !important;            /* 总宽度 80% */
+    margin-left: auto !important;     /* 水平居中 */
+    margin-right: auto !important;
+    justify-content: center;          /* 内部元素也居中排列 */
+  }
+
+  /* 2. 搜索组件只显示放大镜图标，隐藏文字并缩小宽度 */
+  .search {
+    max-width: 2.5rem !important;     /* 控制整体宽度 */
+    min-width: 2.5rem !important;
+    flex-grow: 0 !important;          /* 不随行伸展 */
+  }
+
+  .search > .search-button {
+    padding: 0.25rem !important;      /* 减少内边距 */
+    justify-content: center !important; /* 仅图标居中 */
+  }
+
+  .search > .search-button > p {
+    display: none !important;         /* 隐藏文字 */
   }
 }
