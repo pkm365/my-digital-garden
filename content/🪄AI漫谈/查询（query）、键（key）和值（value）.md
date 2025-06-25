@@ -1,11 +1,11 @@
 ---
-{"publish":true,"title":"What is query,key and value for token","cssclasses":""}
+{"publish":true,"title":"What is query,key and value for token","tags":["ZK/PN"],"cssclasses":""}
 ---
 
 
 ### 核心三要素：查询（Query）、键（Key）、值（Value）
 
-为了实现这种“选择性关注”，注意力机制引入了三个非常重要的概念，我们可以通过一个生动的比喻来理解它们。
+为了实现这种“选择性关注”，[[🪄AI漫谈/注意力机制在 Transformer 模型中是如何运作的？\|注意力机制]]引入了三个非常重要的概念，我们可以通过一个生动的比喻来理解它们。
 #### 隐喻：在图书馆查资料
 
 想象一下，你（**模型**）为了写一篇关于“**人工智能对经济的影响**”的论文（**当前任务**），来到了一个巨大的图书馆（**输入文本序列**）。

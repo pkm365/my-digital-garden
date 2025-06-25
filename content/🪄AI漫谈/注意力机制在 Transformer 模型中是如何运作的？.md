@@ -4,8 +4,6 @@
 
 ## 概念定义
 
-The attention mechanism allows LLMs to weigh the importance of different tokens in a sequence when generating or interpreting text. It computes similarity scores between query, key, and value vectors, using operations like dot products, to focus on relevant tokens. For instance, in "The cat chased the mouse," attention helps the model link "mouse" to "chased." This mechanism improves context understanding, making transformers highly effective for NLP tasks.
-
 **注意力机制**允许 LLM 在生成或解释文本时，权衡序列中[[🪄AI漫谈/注意力权重怎么来的\|不同词元的重要性]]。它通过计算[[🪄AI漫谈/查询（query）、键（key）和值（value）]]向量之间的相似度得分（例如使用[[🪄AI漫谈/点积（Dot Product）在自注意力机制中是如何起作用的？\|点积运算]]），来聚焦于相关的词元。例如，在句子“The cat chased the mouse”（猫追老鼠）中，注意力机制可以帮助模型将“mouse”（老鼠）与“chased”（追）联系起来。这种机制提高了对上下文的理解能力，使得 [[Transformer]] 在自然语言处理（NLP）任务中非常高效。
 ![image.png](https://wifi-1308568485.cos.ap-nanjing.myqcloud.com/picture/202506191427596.png)
 
@@ -22,7 +20,7 @@ The attention mechanism allows LLMs to weigh the importance of different tokens 
     
     - 和“科技、经济、21世纪”这个标签一比，发现**相关度很高**（匹配得分高）。
     - 和“历史、艺术、文艺复兴”这个标签一比，发现**相关度很低**（匹配得分低）。 这个比对过程，在模型里通常就是你提到的“**[[🪄AI漫谈/点积（Dot Product）在自注意力机制中是如何起作用的？\|点积运算]]**”。它计算出你的“查询”和每一个“键”之间的相似度得分。
-- **第二步：加权（分配注意力权重）** 你根据这个相关度得分，来分配你的“注意力”。你会花90%的精力去看那本关于科技和经济的书，可能只会花0.1%的精力（甚至不看）那本关于文艺复兴的书。这个百分比，就是“**[[🪄AI漫谈/注意力权重怎么来的\|注意力权重]]**”。得分越高的，权重越大。通常会用一个叫做 Softmax 的函数来将原始的得分转换成总和为1的权重比例。
+- **第二步：加权（分配注意力权重）** 你根据这个相关度得分，来分配你的“注意力”。你会花90%的精力去看那本关于科技和经济的书，可能只会花0.1%的精力（甚至不看）那本关于文艺复兴的书。这个百分比，就是“**[[🪄AI漫谈/注意力权重怎么来的\|注意力权重]]**”。得分越高的，权重越大。通常会用一个叫做 [[🪄AI漫谈/Softmax 函数在注意力机制中是如何应用的？\|Softmax 的函数]]来将原始的得分转换成总和为1的权重比例。
     
 - **第三步：汇总（得到最终结果）** 最后，你根据分配好的注意力权重，去“阅读”那些书的“值”（Value - 实际内容）。你将90%的权重乘以《科技与经济》的内容，加上0.1%的权重乘以《文艺复兴史》的内容…… 最终，你脑海里形成的知识，是一个**加权融合后的信息**。这个信息高度集中了与你查询最相关的内容，同时又没有完全丢弃其他（可能次要的）信息。
     
@@ -80,8 +78,5 @@ graph TD
 
 ## 360
 
-[[啥是**稀疏注意力**”（Sparse Attention）]]
-闪念：
-我们用了那么大的精力，终于让机器学会： 
-"Attention is all you need."  
-与此同时，人类却正在失去注意力。
+- [[啥是**稀疏注意力**”（Sparse Attention）]]
+- [[我们用了那么大的精力，终于让机器学会： "Attention is all you need."  与此同时，人类却正在失去注意力]]
