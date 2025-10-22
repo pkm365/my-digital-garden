@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-# Quartz v4
-
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
-=======
 # 我的数字花园 🌱
 
 基于 [Quartz](https://quartz.jzhao.xyz/) 构建的个人数字花园，用于知识管理和思维网络的可视化展示。
@@ -89,4 +69,3 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 ---
 
 💡 这是一个活跃的知识花园，内容会持续更新和完善。
->>>>>>> d6a9d90e1273898889d8a2ffce6b723e23d69e33
